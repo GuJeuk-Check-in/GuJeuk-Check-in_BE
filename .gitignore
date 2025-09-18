@@ -1,0 +1,47 @@
+# --- OS / Misc ---
+.DS_Store
+Thumbs.db
+
+# --- IDE (IntelliJ) ---
+.idea/
+*.iml
+
+# --- Build / Gradle ---
+.gradle/
+build/
+out/
+# keep Gradle wrapper
+!gradle/wrapper/gradle-wrapper.jar
+
+# --- Logs / Dumps ---
+*.log
+logs/
+hs_err_pid*
+replay_pid*
+
+# --- JVM / Coverage ---
+*.hprof
+jacoco.exec
+coverage/
+
+# --- Packages / Archives ---
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
+
+# --- Env / Secrets ---
+.env
+*.pem
+*.key
+*.keystore
+
+# --- Spring config (commit only examples) ---
+src/main/resources/application*.yml
+src/main/resources/application*.yaml
+src/main/resources/application*.properties
+!src/main/resources/application.yml.example
+!src/main/resources/application.yaml.example
+!src/main/resources/application.properties.example

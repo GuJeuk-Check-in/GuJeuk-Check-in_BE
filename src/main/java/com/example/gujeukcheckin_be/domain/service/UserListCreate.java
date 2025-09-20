@@ -10,17 +10,17 @@ import org.springframework.stereotype.Service;
 public class UserListCreate {
     private CustomLogRepository customLogRepository;
 
-    public void createUserList(CustomLogEntity listEntity) {
+    public void createUserList(CustomLogEntity list) {
         CustomLogEntity customLogEntity = new CustomLogEntity();
 
-        customLogEntity.setName(listEntity.getName());
-        customLogEntity.setPhone(listEntity.getPhone());
-        customLogEntity.setBirthYMD(listEntity.getBirthYMD());
-        customLogEntity.setPrivacyAgreed(listEntity.getPrivacyAgreed());
-        customLogEntity.setPurpose(listEntity.getPurpose());
-        customLogEntity.setMaleCount(listEntity.getMaleCount());
-        customLogEntity.setFemaleCount(listEntity.getFemaleCount());
-        customLogEntity.setVisitDate(listEntity.getVisitDate());
+        customLogEntity.setName(list.getName());
+        customLogEntity.setPhone(list.getPhone());
+        customLogEntity.setBirthYMD(list.getBirthYMD());
+        customLogEntity.setPrivacyAgreed(list.getPrivacyAgreed());
+        customLogEntity.setPurpose(list.getPurpose());
+        customLogEntity.setMaleCount(list.getMaleCount());
+        customLogEntity.setFemaleCount(list.getFemaleCount());
+        customLogEntity.setVisitDate(list.getVisitDate());
 
         customLogRepository.save(customLogEntity);
     }
